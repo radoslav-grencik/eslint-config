@@ -1,17 +1,17 @@
-{
-  "root": true,
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+module.exports = {
+  root: true,
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
-  "plugins": ["prettier", "simple-import-sort"],
-  "extends": ["eslint:recommended", "prettier"],
-  "rules": {
+  plugins: ["prettier", "simple-import-sort"],
+  extends: ["eslint:recommended", "prettier"],
+  rules: {
     "dot-notation": "error",
-    "eqeqeq": ["error", "always"],
+    eqeqeq: ["error", "always"],
     "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
     "no-template-curly-in-string": ["error"],
     "no-useless-rename": "error",
@@ -24,27 +24,27 @@
     "simple-import-sort/imports": [
       "error",
       {
-        "groups": [
+        groups: [
           ["^react", "^@?\\w"],
           ["^(@|components)(/.*|$)"],
           ["^\\u0000"],
           ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
           ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
-          ["^.+\\.?(css)$"]
-        ]
-      }
-    ]
+          ["^.+\\.?(css)$"],
+        ],
+      },
+    ],
   },
-  "overrides": [
+  overrides: [
     {
-      "files": ["**/*.astro", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
-      "parser": "@typescript-eslint/parser",
-      "plugins": ["@typescript-eslint"],
-      "extends": [
+      files: ["**/*.astro", "**/*.cts", "**/*.mts", "**/*.ts", "**/*.tsx"],
+      parser: "@typescript-eslint/parser",
+      plugins: ["@typescript-eslint"],
+      extends: [
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/eslint-recommended"
+        "plugin:@typescript-eslint/eslint-recommended",
       ],
-      "rules": {
+      rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-empty-function": "off",
@@ -52,36 +52,36 @@
         "@typescript-eslint/no-unused-vars": [
           "warn",
           {
-            "args": "all",
-            "argsIgnorePattern": "^_",
-            "varsIgnorePattern": "^_"
-          }
+            args: "all",
+            argsIgnorePattern: "^_",
+            varsIgnorePattern: "^_",
+          },
         ],
-        "@typescript-eslint/prefer-optional-chain": "error"
-      }
+        "@typescript-eslint/prefer-optional-chain": "error",
+      },
     },
     {
-      "files": ["**/*.js", "**/*.jsx", "**/*.tsx"],
-      "plugins": ["react", "jsx-a11y"],
-      "extends": [
+      files: ["**/*.js", "**/*.jsx", "**/*.tsx"],
+      plugins: ["react", "jsx-a11y"],
+      extends: [
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
         "plugin:react-hooks/recommended",
-        "plugin:jsx-a11y/recommended"
+        "plugin:jsx-a11y/recommended",
       ],
-      "rules": {
+      rules: {
         "no-restricted-imports": [
           "error",
           {
-            "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
-          }
+            patterns: ["@mui/*/*/*", "!@mui/material/test-utils/*"],
+          },
         ],
         "react/function-component-definition": [
           "error",
           {
-            "namedComponents": "arrow-function",
-            "unnamedComponents": "arrow-function"
-          }
+            namedComponents: "arrow-function",
+            unnamedComponents: "arrow-function",
+          },
         ],
         "react/jsx-boolean-value": ["error", "never"],
         "react/jsx-curly-brace-presence": ["error", "never"],
@@ -91,8 +91,8 @@
         "react/jsx-no-useless-fragment": [
           "error",
           {
-            "allowExpressions": true
-          }
+            allowExpressions: true,
+          },
         ],
         "react/no-array-index-key": "error",
         "react/prop-types": "off",
@@ -100,27 +100,27 @@
         "react-hooks/exhaustive-deps": [
           "warn",
           {
-            "additionalHooks": "(useDebouncedCallback)"
-          }
-        ]
+            additionalHooks: "(useDebouncedCallback)",
+          },
+        ],
       },
-      "settings": {
-        "react": {
-          "version": "detect"
-        }
-      }
+      settings: {
+        react: {
+          version: "detect",
+        },
+      },
     },
     {
-      "files": ["**/*.astro"],
-      "parser": "astro-eslint-parser",
-      "parserOptions": {
-        "extraFileExtensions": [".astro"],
-        "parser": "@typescript-eslint/parser"
+      files: ["**/*.astro"],
+      parser: "astro-eslint-parser",
+      parserOptions: {
+        extraFileExtensions: [".astro"],
+        parser: "@typescript-eslint/parser",
       },
-      "extends": [
+      extends: [
         "plugin:astro/recommended",
-        "plugin:astro/jsx-a11y-recommended"
-      ]
-    }
-  ]
-}
+        "plugin:astro/jsx-a11y-recommended",
+      ],
+    },
+  ],
+};
