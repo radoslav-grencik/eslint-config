@@ -1,16 +1,16 @@
 {
   "name": "@radoslav-grencik/eslintrc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint and Prettier configuration by Radoslav Grenčík",
   "keywords": [
     "eslint",
     "prettier"
   ],
-  "main": "index.js",
+  "main": "config.js",
   "author": "radoslav-grencik",
   "license": "MIT",
   "peerDependencies": {
-    "@radoslav-grencik/prettierrc": "^1.0.2",
+    "@radoslav-grencik/prettierrc": "latest",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
     "eslint": "^8.36.0",
