@@ -1,0 +1,34 @@
+{
+  "name": "@radoslav-grencik/eslintrc",
+  "version": "0.0.1",
+  "description": ".eslintrc",
+  "main": ".eslintrc.json",
+  "author": "radoslav-grencik",
+  "license": "MIT",
+  "peerDependencies": {
+    "@radoslav-grencik/prettierrc": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-astro": "^0.26.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.4",
+    "typescript": "^5.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radoslav-grencik/eslintrc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/radoslav-grencik/eslintrc/issues"
+  },
+  "homepage": "https://github.com/radoslav-grencik/eslintrc",
+  "publishConfig": {
+    "access": "public"
+  }
+}
