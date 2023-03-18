@@ -1,7 +1,11 @@
 {
   "name": "@radoslav-grencik/eslintrc",
-  "version": "0.0.1",
-  "description": ".eslintrc",
+  "version": "1.0.0",
+  "description": ".eslintrc.json + .prettierrc.json",
+  "keywords": [
+    "eslint",
+    "prettier"
+  ],
   "main": ".eslintrc.json",
   "author": "radoslav-grencik",
   "license": "MIT",
