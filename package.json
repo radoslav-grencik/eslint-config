@@ -1,16 +1,18 @@
 {
-  "name": "@radoslav-grencik/eslintrc",
-  "version": "1.0.5",
+  "name": "@radoslav-grencik/eslint-config",
+  "version": "1.0.0",
   "description": "ESLint and Prettier configuration by Radoslav Grenčík",
   "keywords": [
     "eslint",
-    "prettier"
+    "eslintconfig",
+    "prettier",
+    "prettierconfig"
   ],
-  "main": "config.cjs",
+  "main": ".eslintrc.json",
   "author": "radoslav-grencik",
   "license": "MIT",
   "peerDependencies": {
-    "@radoslav-grencik/prettierrc": "^1.0.3",
+    "@radoslav-grencik/prettier-config": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
     "eslint": "^8.36.0",
@@ -26,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/radoslav-grencik/eslintrc.git"
+    "url": "https://github.com/radoslav-grencik/eslint-config.git"
   },
   "bugs": {
-    "url": "https://github.com/radoslav-grencik/eslintrc/issues"
+    "url": "https://github.com/radoslav-grencik/eslint-config/issues"
   },
-  "homepage": "https://github.com/radoslav-grencik/eslintrc",
+  "homepage": "https://github.com/radoslav-grencik/eslint-config",
   "publishConfig": {
     "access": "public"
   }
