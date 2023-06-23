@@ -61,7 +61,7 @@
       }
     },
     {
-      "files": ["**/*.js", "**/*.jsx", "**/*.tsx"],
+      "files": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
       "plugins": ["react", "jsx-a11y"],
       "extends": [
         "plugin:react/recommended",
@@ -100,7 +100,7 @@
         "react-hooks/exhaustive-deps": [
           "warn",
           {
-            "additionalHooks": "(useDebouncedCallback)"
+            "additionalHooks": "(useDebouncedCallback|useIsoLayoutEffect)"
           }
         ]
       },
