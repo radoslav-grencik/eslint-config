@@ -7,7 +7,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["prettier", "simple-import-sort"],
+  "plugins": ["prettier", "simple-import-sort", "unused-imports"],
   "extends": ["eslint:recommended", "prettier"],
   "rules": {
     "dot-notation": "error",
@@ -33,6 +33,17 @@
           ["^.+\\.?(css)$"]
         ]
       }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "all",
+        "argsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
     ]
   },
   "overrides": [
@@ -49,14 +60,7 @@
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-empty-function": "off",
         "@typescript-eslint/no-explicit-any": "warn",
-        "@typescript-eslint/no-unused-vars": [
-          "warn",
-          {
-            "args": "all",
-            "argsIgnorePattern": "^_",
-            "varsIgnorePattern": "^_"
-          }
-        ]
+        "@typescript-eslint/no-unused-vars": "off"
       }
     },
     {
