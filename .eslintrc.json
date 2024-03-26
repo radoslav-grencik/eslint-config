@@ -25,12 +25,20 @@
       "error",
       {
         "groups": [
+          // Things that start with `react`, a letter or `@` followed by a letter.
           ["^react", "^@?\\w"],
-          ["^(@|components)(/.*|$)"],
+          // InQool packages - things that start with `@iq/` or `@core/` or `@/`.
+          ["^@(iq|core)?/\\w"],
+          // Node.js builtins prefixed with `node:`.
+          ["^node:"],
+          // Relative imports.
+          ["^\\."],
+          // Anything not matched in another group.
+          ["^"],
+          // Side effect imports.
           ["^\\u0000"],
-          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
-          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
-          ["^.+\\.?(css)$"]
+          // Style imports.
+          ["\\.(sa|sc|c)ss$"]
         ]
       }
     ],
